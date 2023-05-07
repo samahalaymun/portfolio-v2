@@ -1,0 +1,143 @@
+
+.btn a{
+    color: #fff;
+}
+.home-content {
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.home-social {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.home-social-icon {
+    font-size: 1.25rem;
+    color: var(--first-color);
+    animation: growup 3s infinite;
+    transition: transform 3s;
+}
+.home-social-icon:hover{
+    transform: translateY(-.25rem);
+}
+@keyframes growup {
+    0% {
+        transform: scale(1);
+
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.home-social-icon:hover {
+    color: var(--first-color-alt);
+}
+
+.home-blob {
+    width: 200px;
+    fill: var(--first-color);
+}
+
+
+.home-blob-img {
+    height: 200px;
+    width: 200px;
+   
+}
+
+.home-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home-data h1 {
+    font-size: var(--big-font-size);
+
+}
+
+.home-data h3 {
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+
+.home-data .home-description {
+    margin-bottom: var(--mb-2);
+
+}
+
+.home-scroll {}
+
+.home-scroll button {
+    color: var(--first-color);
+    transition: 0.3s;
+    font-size: var(--small-font-size);
+    margin-top: var(--mb-1);
+    display: none;
+
+}
+
+.home-scroll button:hover {
+    transform: translateY(0.25rem);
+}
+
+@media (max-width:350px) {
+    .home-content {
+        grid-template-columns: .25rem 3rem;
+    }
+
+    .home-blob {
+        width: 180px;
+    }
+}
+
+@media (min-width:600px) {
+    .Home-image {
+        order: 1;
+        justify-self: center;
+    }
+}
+
+@media (min-width:768px) {
+    .section {}
+
+    .home-content {
+        padding-top: 5.5rem;
+    }
+
+    .home-blob {
+        width: 270px;
+    }
+}
+
+@media (min-width:1024px) {
+    .home-blob {
+        width: 320px;
+    }
+
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    /* 60% {
+        background-position: 600px;
+    } */
+
+    100% {
+        background-position: 600px;
+    }
+}

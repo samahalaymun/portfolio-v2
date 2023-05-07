@@ -1,0 +1,60 @@
+.project-container {
+    width: 80%;
+    background-color: var(--first-color);
+    padding-top: 3rem;
+    padding: 3rem 1.5rem;
+    margin: 0 auto;
+}
+
+
+
+.project-title {
+    margin-bottom: var(--mb-0-75);
+
+}
+
+.project-title h2 {
+    color: #fff;
+}
+
+.project-description {
+    margin-bottom: var(--mb-1-5);
+    color: #fff;
+}
+
+.project-data{
+    text-align: center;
+}
+.project-data .white-btn {
+    background-color: #fff;
+    color: var(--first-color);
+}
+.project-data .white-btn a{
+    color: var(--first-color);
+}
+.project-data .white-btn:hover {
+    background-color: #fff;
+    color: var(--first-color);
+}
+
+
+@media (min-width:768px) {
+    .project {
+        text-align: initial;
+        position: relative;
+
+    }
+    .project-container {
+        border-radius: 1rem;
+    }
+
+    .project-data {
+        padding-top: .8rem;
+    }
+}
+@media (max-width:768px){
+    .project-container{
+        width: 100%;
+        border-radius: 1rem;
+    }
+}

@@ -1,0 +1,53 @@
+.contact-content{
+    width: 80%;
+    margin: 0 auto; 
+}
+.contact-card{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: var(--mb-2);
+    align-items: center;
+}
+
+.contact-card-icon{
+    color: var(--first-color);
+}
+.card-info-title{
+    margin-bottom: var(--mb-0-25);
+    
+}
+.card-info-data{
+color: var(--text-color-light);
+}
+.input-wrapper{
+    padding: 0.75rem 1rem .25rem;
+    background-color: var(--input-color);
+    border-radius: 0.5rem;
+    margin-bottom: var(--mb-2);
+}
+.input-wrapper .input-label{
+  color:var(--title-color) ;
+}
+.input-wrapper input ,.contact-message{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem  0;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+.input-wrapper:has(> input:focus),.input-wrapper:has(> textarea:focus){
+    border: 2px solid var(--first-color);
+}
+.contact-message{
+    height: 8rem;
+}
+.success {
+    color: green;
+}
+
+.fail {
+    color: red;
+}
