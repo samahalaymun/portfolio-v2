@@ -8,7 +8,6 @@ import "./Qualification.css";
 import QualificationCard from './QualificationCard';
 import QualificationSectionTitle from './QualificationSectionTitle';
 import { Grid } from "@mui/material";
-import Slide from "react-reveal/Slide";
 
 const QualificationSection = () => {
   return (
@@ -17,7 +16,6 @@ const QualificationSection = () => {
       <Box className="qualification-tabs">
         <Grid container rowGap={6}>
           <Grid xs={12} sm={6} item className="education">
-            <Slide top>
               <QualificationSectionTitle
                 title="Education"
                 icon={<SchoolIcon />}
@@ -27,10 +25,8 @@ const QualificationSection = () => {
                 subTitle="An-Najah National University"
                 year="2011 - 2016"
               />
-            </Slide>
           </Grid>
           <Grid item xs={12} sm={6} className="work">
-            <Slide top>
               <QualificationSectionTitle
                 title="Work"
                 icon={<BusinessCenterIcon />}
@@ -45,7 +41,6 @@ const QualificationSection = () => {
                 subTitle="Harri"
                 year=" 2022 - 2022"
               />
-            </Slide>
           </Grid>
         </Grid>
       </Box>

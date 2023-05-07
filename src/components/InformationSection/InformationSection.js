@@ -12,7 +12,6 @@ import "./InformationSection.css";
 import ButtonWithIcon from "../commonComponents/ButtonWithIcon";
 import Typewriter from "typewriter-effect";
 import SocialIcons from "../commonComponents/SocialIcons/SocialIcons";
-import  Slide  from "react-reveal/Slide";
 
 export default function InformationSection() {
   const navigate = useNavigate();

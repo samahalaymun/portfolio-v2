@@ -6,8 +6,7 @@ import ButtonWithIcon from "../commonComponents/ButtonWithIcon";
 import DownloadIcon from "@mui/icons-material/Download";
 import downloadCv from "../../assets/pdf/Eng_samahCV.pdf";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import Slide from "react-reveal/Slide";
-import Zoom from "react-reveal/Zoom";
+
 
 const AboutSection = () => {
   return (
@@ -21,13 +20,13 @@ const AboutSection = () => {
         >
           <Grid item lg={6} md={6} sm={6} xs={12}>
             <Box className="img-wrapper">
-              <Slide left>
+           
                 <img src={AboutImage} className="about-img" />
-              </Slide>
+           
             </Box>
           </Grid>
           <Grid item lg={6} md={6} sm={6} xs={12}>
-            <Slide left>
+          
               <Box className="about-data">
                 <Box className="about-description">
                   <Typography variant="subtitle1">
@@ -76,7 +75,7 @@ const AboutSection = () => {
                   <DownloadIcon />
                 </ButtonWithIcon>
               </Box>
-            </Slide>
+        
           </Grid>
         </Grid>
       </Box>

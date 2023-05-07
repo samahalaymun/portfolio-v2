@@ -2,13 +2,10 @@ import React from 'react'
 import "./ServicesSection.css";
 import SectionTitle from '../SectionTitle/SectionTitle';
 import { Box,Grid} from '@mui/material';
-import WebIcon from "@mui/icons-material/Web";
 import CodeIcon from "@mui/icons-material/Code";
 import ServiceCard from './ServiceCard';
-import { Web } from '@mui/icons-material';
 import EditIcon from "@mui/icons-material/Edit";
 import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
-import  Slide  from 'react-reveal/Slide';
 
 const ServicesSection = () => {
   let serviceData = {

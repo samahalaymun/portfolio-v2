@@ -10,7 +10,6 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ButtonWithIcon from "../commonComponents/ButtonWithIcon";
 import SendIcon from "@mui/icons-material/Send";
 import emailjs from "@emailjs/browser";
-import Slide from "react-reveal/Slide";
 import InputCard from "./InputCard";
 import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
 import NotificationCard from "../commonComponents/NotificationCard/NotificationCard";
@@ -63,7 +62,7 @@ const ContactSection = () => {
       <Box className="contact-content">
         <Grid container rowGap={4}>
           <Grid item xs={12} md={6}>
-            <Slide left>
+          
               <ContactCard
                 title="Call Me"
                 info="0569481919"
@@ -74,8 +73,8 @@ const ContactSection = () => {
                   />
                 }
               />
-            </Slide>
-            <Slide left>
+         
+        
               <ContactCard
                 title="Email"
                 info="samah_abu_laymun@hotmail.com"
@@ -86,8 +85,8 @@ const ContactSection = () => {
                   />
                 }
               />
-            </Slide>
-            <Slide left>
+         
+     
               <ContactCard
                 title="Location"
                 info="Palestine - Nablus"
@@ -98,36 +97,29 @@ const ContactSection = () => {
                   />
                 }
               />
-            </Slide>
           </Grid>
           <Grid item xs={12} md={6}>
             <form ref={form} onSubmit={onSubmit}>
-              <Slide left>
+          
                 <InputCard
                   inputLabel="Name"
                   inputId="name"
                   inputName="name"
                   inputType="text"
                 />
-              </Slide>
-              <Slide left>
+          
                 <InputCard
                   inputLabel="Email"
                   inputId="email"
                   inputName="email"
                   inputType="email"
                 />
-              </Slide>
-              <Slide left>
                 <InputCard
                   inputLabel="Project"
                   inputId="project"
                   inputName="project"
                   inputType="text"
                 />
-              </Slide>
-
-              <Slide left>
                 <Box className="input-wrapper name">
                   <Typography variant="subtitle1" className="input-label">
                     Message
@@ -138,7 +130,7 @@ const ContactSection = () => {
                     className="contact-message"
                   ></textarea>
                 </Box>
-              </Slide>
+           
               {formMessage && (
                 <NotificationCard
                   message={formMessage}
