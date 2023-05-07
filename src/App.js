@@ -10,12 +10,12 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router basename="/">
+      <Router basename="/portfolio-v2">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </ThemeProvider>
   );
